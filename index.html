@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <style type="text/css">
+    @import url(https://fonts.googleapis.com/css?family=Raleway);
+
+    @font-face {
+      font-family: MyriadPro;
+      src: url(fonts/MyriadPro-Regular.otf);
+    }
+    @font-face {
+      font-family: SFNSDisplay;
+      src:url(fonts/sfns.ttf);
+    }
+
+    .footer-movil{
+      display: none;
+    }
+
+    .content-movil{
+      display: none;
+    }
+
+    .nav-wrapper-movil{
+      display: none;
+    }
+
+    body{
+      font-family:" unset";
+    }
+
+    nav{
+     background-image: linear-gradient(to left, #195184, #15467b);
+     width: 100%;
+     height: 13.8%;
+     font-family: unset; 
+   }
+
+   nav img{
+    padding-left: 10.1%;
+  }
+
+  .nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+  }
+
+  .nav-menu{
+    width: 40%;
+  }
+
+  .nav-wrapper ul{
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    color: #ffffff;
+  }
+
+
+  .nav-wrapper ul li:hover {
+    color: #69e3e9;
+  }
+
+
+  .nav-wrapper ul li{
+    display: inline-flex;
+    font-family: MyriadPro !important;
+  }
+
+  .iMax {
+    display: flex;
+    justify-content: center;  
+    font-family:Raleway !important;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .creemos{
+    display: flex;
+    justify-content: center;
+    font-family: SFNSDisplay !important;
+    font-size: 30px;
+    text-align: center;
+    color: #ffffff;
+    margin: 0;
+  }
+
+  .tittle-box{  
+    font-family: Raleway !important;
+    font-size: 36px;
+    font-weight: 600;
+    text-align: justify;
+    color: #195184;
+  }
+  .content-box{
+    opacity: 0.7;
+    font-family: MyriadPro !important;
+    font-size: 24px;
+    color: #2a3a4b;
+  }
+
+  .content-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .content-wrapper2{
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  .valores-imax p{  
+    font-family:Raleway !important;
+    font-size: 34px;
+    font-weight: 600;
+    text-align: center;
+    color: #195184;
+    margin-top: 7.7%;
+    margin-bottom: 0;
+  }
+
+  .valores-wrapper{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  
+
+  .tittle-box2{
+   font-family:Raleway;
+   font-size: 36px;
+   font-weight: 600;
+   text-align: justify;
+   color: #536eaa;
+ }
+ .tittle-box2 img{
+  margin: 1.6%;
+}
+
+.box ul li{
+  font-family:MyriadPro;
+  font-size: 20px;
+  color: rgba(42, 58, 75, 0.7);
+}
+
+.download{
+  display: flex;
+  justify-content: space-around;
+}
+
+footer{
+  width: 100%;
+  height: 7.7%;
+  background-color: #15467b;
+}
+
+.footer-wrapper{
+  display: flex;
+  justify-content: space-around;
+  font-family:MyriadPro;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+  padding-top: 2%;
+}
+
+.footer-wrapper ul li{
+  display: flex;
+}
+
+.social-imax{
+  width: 30%;
+  display: flex;
+  height: 5%;
+  justify-content: space-evenly;
+  padding-top: 2%;
+}
+
+.fondo{
+ background: url("img/fondo.png") no-repeat center center fixed; 
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .nav-wrapper{
+    display: none;
+  }
+
+  .footer-wrapper{
+    display: none;
+  }
+  .nav-wrapper-movil{
+    display: inherit;
+  }
+
+  .iMax{
+    font-size: 24px !important;
+  }
+
+  .creemos{
+    font-size: 15px;
+  }
+
+  .content{
+    display: none;
+  }
+
+
+  .content-movil{
+    display: inherit;
+  }
+
+
+
+
+  .content-movil{
+    margin: 0 8.9%;
+  }
+
+  .fondo{
+    display: none;
+  }
+
+  .fondo-movil{
+    display: inherit;
+    background-image: url(img/movil/drawable-hdpi/fondo.png);
+  }
+
+
+  .titulo-movil{
+    font-size: 20px;
+    color: #536EAA;
+    font-family: Relaway;
+  }
+
+  .texto-movil{
+    font-size: 15px;
+    color: #2A3A4B;
+    font-family: MyriadPro;
+  }
+
+  .img-movil{
+    width: 100%;
+  }
+
+  .download-movil{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .download-movil img{
+    width: 45%;
+  }
+
+  .footer-movil{
+    display: block;
+    font-size: 13px;
+    color: #2A3A4B;
+    font-family: MyriadPro;;
+    padding-top: 13.1%;
+
+  }
+
+  .listas{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10%;
+  }
+  .sociales{
+    display: flex;
+    justify-content: space-around;
+    width: 65%;
+    padding-left: 4.4%;
+    padding-bottom: 15.5%;
+
+    padding-top: 14%;
+
+  }
+
+  .listas ul{
+    padding: 0;
+  }
+
+  .listas ul li{
+    display: flex;
+
+  }
+
+  .logo-footer{
+    margin: 0 11.4% 0 10.7%;
+  }
+}
+
+
+</style>
+<link type="text/css" rel="stylesheet" href="css/animate.css" />
+<script src="js/wow.min.js"></script>
+<script>
+  new WOW().init();
+</script>
+</head>
+<body>
+  <nav>
+    <div class="nav-wrapper">
+      <img src="img/logo-imax.png">
+      <div class="nav-menu">
+        <ul>
+          <li>Inicio</li>
+          <li>Nosotros</li>
+          <li>Nuestra App</li>
+        </ul>        
+      </div>
+    </div>
+    <div class="nav-wrapper-movil">
+      <img src="img/movil/drawable-hdpi/logo_imax.png">
+    </div>
+    <div class="home">
+      <span class="iMax">#YoSoyiMax</span>
+      <p class="creemos">Creemos que todo el mundo merece una <br>oportunidad para prosperar</p>      
+    </div>
+  </nav>
+
+  <div class="content">
+    <div class="fondo"> 
+      <div class="content-wrapper">
+        <div class="wow zoomIn" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: zoomIn;"><img style="margin-left: 2.7%" src="img/red-imax.png"></div>
+
+
+        <div class="box" style="margin-right: 11.3%;">
+          <p class="tittle-box">IMAX Network Team</p>
+          <div class="content-box">Somos una familia global que apoya el espíritu<br> empresarial. Hoy en día la comunidad se<br> conforma por <span style="font-weight: bold;">15,000</span> empresarios que se<br> extienden en <span style="font-weight: bold;">16 países.</span> </div> 
+        </div>
+      </div>
+
+      <div class="content-wrapper2">
+        <div class="box" style="margin-left: 10.1%;">
+          <p class="tittle-box2 wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;"><img src="img/mision.png">Misión</p>
+          <p class="content-box" style="font-size: 20px;">
+            Formar empresarios profesionales, líderes en la corporación Amway,<br> que por medio de la educación y los valores de integridad,<br> perseverancia y valentía, se logre un impacto máximo de prosperidad y<br> trascendencia en las familias, brindándoles las herramientas para ser<br> libres financieramente y mejorar su calidad de vida integralmente.
+          </p>
+        </div>
+        <div class="box" style="margin-right: 10.1%;">
+          <p class="tittle-box2 wow fadeInRight" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInRight;"><img src="img/vision.png">Visión </p>
+          <p class="content-box" style="font-size: 20px;">Ser una organización líder a nivel mundial<br> dentro de la corporación Amway que logre <br>trascender por sus valores y la generación<br> de prosperidad en la sociedad. </p>
+        </div>
+      </div>
+
+      <div class="valores-imax">
+        <p>Con el objetivo de crear familias prósperas, iMax fue fundado en <br>cinco valores:</p>
+      </div>
+
+      <div class="valores-wrapper">
+
+       <img src="img/valores.png">
+     </div>
+   </div>
+
+
+   <div class="content-wrapper" style="margin-top: 2.9%">
+    <div class="wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;"><img  src="img/comunidad.png"></div>
+    <div class="box" style="margin-right: 10.4%">
+      <p class="tittle-box" style="text-align: center;">Forma parte de esta gran<br> red empresarial</p>
+      <p class="content-box" style="font-size: 20px;">
+        El éxito empresarial toma algo más que información.<br> Contamos con una herramienta digital que permite <br>consultar y compartir información para la capacitación,  <br>crecimiento y desarrollo de habilidades de nuestros<br> empresarios que forman parte de IMAX.</p>
+      </div>
+    </div>
+
+    <div class="content-wrapper">            
+      <div class="box" style="margin-left: 10.1%; font-size: 20px;" >
+        <ul>
+          <li>Disfruta de contenidos para tu capacitación: videos, audios y libros.</li>
+          <li>Enteráte de los eventos que tenemos para ti: seminarios, capacitaciones, orientaciones empresariales y convenciones.</li>
+          <li>Publica y comparte tus momentos de victoria.</li> 
+        </ul>
+        <p class="tittle-box" style="text-align: center;">¡Descárgala ahora!</p>
+        <div class="download">
+          <img src="img/app-store.png">        
+          <img src="img/google-play.png">
+        </div>
+      </div>
+      <div class="wow fadeInRight" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInRight;"><img src="img/emprendimiento.png">
+      </div>
+    </div>
+  </div>
+
+
+  <div class="content-movil">
+    <div class="fondo-movil">
+      <p class="titulo-movil">IMAX Network Team</p>
+      <div class="texto-movil">
+        Somos una familia global que apoya el espíritu empresarial. Hoy en día la comunidad se conforma por 15,000 empresarios que se extienden en 16 países.
+      </div>
+      <img class="img-movil wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;" src="img/movil/drawable-hdpi/red_imax.png">
+
+      <p class="titulo-movil wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;"> <img src="img/movil/drawable-hdpi/mision.png"> Misión</p>
+      <div class="texto-movil">
+        Formar empresarios profesionales, líderes en la corporación Amway, que por medio de la educación y los valores de integridad, perseverancia y valentía, se logre un impacto máximo de prosperidad y trascendencia en las familias, brindándoles las herramientas para ser libres financieramente y mejorar su calidad de vida integralmente.
+      </div>
+      <p class="titulo-movil wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;"> <img src="img/movil/drawable-hdpi/vision.png"> Visión</p>
+      <div class="texto-movil">
+        Ser una organización líder a nivel mundial dentro de la corporación Amway que logre trascender por sus valores y la generación de prosperidad en la sociedad. 
+      </div>  
+      <p class="titulo-movil">Con el objetivo de crear familias prósperas, iMax fue fundado en cinco valores:</p>    
+      <img class="img-movil" src="img/movil/drawable-hdpi/valores.png"> 
+    </div>
+    <div class="valores">
+      <p class="titulo-movil">
+        Forma parte de esta gran red empresarial
+      </p>
+      <div class="texto-movil">
+        El éxito empresarial toma algo más que información. Contamos con una herramienta digital que permite consultar y compartir información para la capacitación,  crecimiento y desarrollo de habilidades de nuestros empresarios que forman parte de IMAX.
+      </div>
+      <img class="img-movil" src="img/movil/drawable-hdpi/comunidad.png"> 
+      <ul>
+        <li> Disfruta de contenidos para tu capacitación: videos, audios y libros.</li>
+        <li>Enteráte de los eventos que tenemos para ti: seminarios, capacitaciones, orientaciones empresariales y convenciones.</li>
+        <li>Publica y comparte tus momentos de victoria.</li>
+      </ul>
+      <img class="img-movil" src="img/movil/drawable-hdpi/emprendimiento.png">
+      <p class="titulo-movil" style="text-align: center; ">¡Descárgala ahora!</p>
+      <div class="download-movil">    
+        <img src="img/movil/drawable-hdpi/download_on_the_app_store_badge_es_135_x_40.png">
+        <img src="img/movil/drawable-hdpi/google_play_badge.png">
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-wrapper">
+      <div style="padding-left: 6.5%;">
+        <img src="img/logo-imax.png">
+        <p> © IMAX 2017</p>
+
+      </div>
+      <ul>
+        <li>Inicio</li>
+        <li>Quiénes somos</li>
+        <li>Valores</li>
+        <li>Nuestra App</li>
+      </ul>
+
+      <ul>
+        <li>Política de privacidad</li>
+        <li>Términos y condiciones</li>
+        <li>FAQ</li>
+      </ul>
+
+      <div class="social-imax">
+        <img src="img/twitter.png">
+        <img src="img/facebook.png">
+        <img src="img/instagram.png">
+      </div>
+    </div>
+    <div class="footer-movil">
+      <div class="logo-footer">
+        <img src="img/movil/drawable-hdpi/logo_imax2.png">
+        <p>© IMAX 2017</p>
+      </div>
+      <div class="listas">
+        <ul>
+          <li>Inicio</li>
+          <li>Quiénes somos</li>
+          <li>Valores</li>
+          <li>Nuestra App</li>
+        </ul>
+
+        <ul>
+          <li>Politica de privacidad</li>
+          <li>Términos y condiciones</li>
+          <li>FAQ</li>
+        </ul>
+      </div>
+
+      <div class="sociales">
+        <img src="img/movil/drawable-hdpi/twitter.png">
+        <img src="img/movil/drawable-hdpi/facebook.png">
+        <img src="img/movil/drawable-hdpi/instagram.png">
+      </div>
+    </div>
+    
+  </footer>
+
+  <!-- jQuery first, then Tether, then Bootstrap JS. -->
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</body>
+</html>
