@@ -31,15 +31,22 @@
       display: none;
     }
 
+    .home{
+
+     background-image: linear-gradient(to left, #195184, #15467b);
+    }
+
     body{
       font-family:" unset";
     }
 
     nav{
+      position: fixed;
      background-image: linear-gradient(to left, #195184, #15467b);
      width: 100%;
      height: 13.8%;
      font-family: unset; 
+     z-index: 2;
    }
 
    nav img{
@@ -47,6 +54,7 @@
   }
 
   .nav-wrapper{
+     background-image: linear-gradient(to left, #195184, #15467b);
     display: flex;
     justify-content: space-between;
     padding-top: 15px;
@@ -63,9 +71,17 @@
     color: #ffffff;
   }
 
+    .nav-wrapper ul li a{
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+  }
 
-  .nav-wrapper ul li:hover {
+
+
+  .nav-wrapper ul li a:hover {
     color: #69e3e9;
+    text-decoration: none;
   }
 
 
@@ -310,6 +326,7 @@ footer{
 </style>
 <link type="text/css" rel="stylesheet" href="css/animate.css" />
 <script src="js/wow.min.js"></script>
+<script src="js/nav.js"></script>
 <script>
   new WOW().init();
 </script>
@@ -320,20 +337,21 @@ footer{
       <img src="img/logo-imax.png">
       <div class="nav-menu">
         <ul>
-          <li>Inicio</li>
-          <li>Nosotros</li>
-          <li>Nuestra App</li>
+          <li><a href="#Inicio" id="link_1">Inicio</a></li>
+          <li><a href="#Nosotros" id="link_2">Nosotros</a></li>
+          <li><a href="#App" id="link_3">Nuestra App</a></li>
         </ul>        
       </div>
     </div>
     <div class="nav-wrapper-movil">
       <img src="img/movil/drawable-hdpi/logo_imax.png">
-    </div>
-    <div class="home">
+    </div>   
+  </nav>
+
+   <div class="home" id="Inicio">
       <span class="iMax">#YoSoyiMax</span>
       <p class="creemos">Creemos que todo el mundo merece una <br>oportunidad para prosperar</p>      
     </div>
-  </nav>
 
   <div class="content">
     <div class="fondo"> 
@@ -360,7 +378,7 @@ footer{
         </div>
       </div>
 
-      <div class="valores-imax">
+      <div class="valores-imax" id="Nosotros">
         <p>Con el objetivo de crear familias prósperas, iMax fue fundado en <br>cinco valores:</p>
       </div>
 
@@ -371,12 +389,12 @@ footer{
    </div>
 
 
-   <div class="content-wrapper" style="margin-top: 2.9%">
-    <div class="wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;"><img  src="img/comunidad.png"></div>
+   <div class="content-wrapper" style="margin-top: 2.9%" id="App">
+    <div class="wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;"><img style="width: 100%"  src="img/comunidad.png"></div>
     <div class="box" style="margin-right: 10.4%">
       <p class="tittle-box" style="text-align: center;">Forma parte de esta gran<br> red empresarial</p>
       <p class="content-box" style="font-size: 20px;">
-        El éxito empresarial toma algo más que información.<br> Contamos con una herramienta digital que permite <br>consultar y compartir información para la capacitación,  <br>crecimiento y desarrollo de habilidades de nuestros<br> empresarios que forman parte de IMAX.</p>
+        El éxito empresarial toma algo más que información. Contamos con una herramienta digital que permite consultar y compartir información para la capacitación,  crecimiento y desarrollo de habilidades de nuestros empresarios que forman parte de IMAX.</p>
       </div>
     </div>
 
@@ -393,7 +411,7 @@ footer{
           <img src="img/google-play.png">
         </div>
       </div>
-      <div class="wow fadeInRight" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInRight;"><img src="img/emprendimiento.png">
+      <div class="wow fadeInRight" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInRight;"><img style="width: 100%" src="img/emprendimiento.png">
       </div>
     </div>
   </div>
@@ -425,13 +443,13 @@ footer{
       <div class="texto-movil">
         El éxito empresarial toma algo más que información. Contamos con una herramienta digital que permite consultar y compartir información para la capacitación,  crecimiento y desarrollo de habilidades de nuestros empresarios que forman parte de IMAX.
       </div>
-      <img class="img-movil wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;" src="img/movil/drawable-hdpi/comunidad.png"> 
+      <img class="img-movil wow fadeInDown" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInDown;" src="img/movil/drawable-hdpi/comunidad.png"> 
       <ul>
         <li> Disfruta de contenidos para tu capacitación: videos, audios y libros.</li>
         <li>Enteráte de los eventos que tenemos para ti: seminarios, capacitaciones, orientaciones empresariales y convenciones.</li>
         <li>Publica y comparte tus momentos de victoria.</li>
       </ul>
-      <img class="img-movil wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;" src="img/movil/drawable-hdpi/emprendimiento.png">
+      <img class="img-movil wow zoomIn" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: zoomIn;" src="img/movil/drawable-hdpi/emprendimiento.png">
       <p class="titulo-movil" style="text-align: center; ">¡Descárgala ahora!</p>
       <div class="download-movil">    
         <img class="wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;" src="img/movil/drawable-hdpi/download_on_the_app_store_badge_es_135_x_40.png">
@@ -466,7 +484,7 @@ footer{
         <img src="img/instagram.png">
       </div>
     </div>
-    <div class="footer-movil">
+    <div class="footer-movil" style="margin-top: 11.4%">
       <div class="logo-footer">
         <img src="img/movil/drawable-hdpi/logo_imax2.png">
         <p>© IMAX 2017</p>
