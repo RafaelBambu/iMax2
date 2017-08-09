@@ -41,7 +41,8 @@
     }
 
     nav{
-      position: fixed;
+
+      position: fixed !important;
      background-image: linear-gradient(to left, #195184, #15467b);
      width: 100%;
      height: 13.8%;
@@ -49,46 +50,39 @@
      z-index: 2;
    }
 
+.navbar-nav{
+  width: 50%
+}
+
+   .navbar-toggleable-md .navbar-collapse {
+
+    width: 100%;
+justify-content: end;
+   }
+
+   .navbar-toggleable-md .navbar-nav a{
+    display: flex;
+justify-content: space-evenly;
+width: 30%;
+ font-size: 20px !important;
+    color: #ffffff !important;
+    text-decoration: none;
+    font-family: MyriadPro !important;
+   }
+
    nav img{
     padding-left: 10.1%;
   }
 
-  .nav-wrapper{
-     background-image: linear-gradient(to left, #195184, #15467b);
-    display: flex;
-    justify-content: space-between;
-    padding-top: 15px;
-  }
 
-  .nav-menu{
-    width: 40%;
-  }
 
-  .nav-wrapper ul{
-    display: flex;
-    justify-content: space-around;
-    font-size: 20px;
-    color: #ffffff;
-  }
-
-    .nav-wrapper ul li a{
-    font-size: 20px;
-    color: #ffffff;
+   .navbar-toggleable-md .navbar-nav a:hover {
+    color: #69e3e9 !important;
     text-decoration: none;
   }
 
 
 
-  .nav-wrapper ul li a:hover {
-    color: #69e3e9;
-    text-decoration: none;
-  }
-
-
-  .nav-wrapper ul li{
-    display: inline-flex;
-    font-family: MyriadPro !important;
-  }
 
   .iMax {
     display: flex;
@@ -194,6 +188,20 @@ footer{
   display: flex;
 }
 
+.footer-wrapper ul li a{
+  text-decoration: none
+  font-family:MyriadPro;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+ }
+
+
+.footer-wrapper ul li a:hover{
+    text-decoration: none;
+  }
+
+
+
 .social-imax{
   width: 30%;
   display: flex;
@@ -285,8 +293,9 @@ footer{
 
   .footer-movil{
     display: block;
-    font-size: 13px;
-    color: #2A3A4B;
+    font-size: 13px;    
+    color: #FFFFFF;
+    opacity: .7;
     font-family: MyriadPro;;
     padding-top: 13.1%;
 
@@ -317,36 +326,75 @@ footer{
 
   }
 
+  .listas ul li a{
+  text-decoration: none
+  font-family:MyriadPro;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+ }
+
+
+  .listas ul li a:hover{
+    text-decoration: none;
+  }
+
   .logo-footer{
     margin: 0 11.4% 0 10.7%;
   }
+
+  .navbar-nav{
+  width: 100%;
 }
+
+.navbar-toggleable-md .navbar-nav a{
+  display: flex;
+  justify-content: normal;
+
+}
+
+.navbar-light .navbar-toggler {
+  border: none;
+  width: 25%;
+}
+
+.navbar-light .navbar-toggler img{
+  width: 50%;
+}
+
+nav a img{
+
+width: 25%;
+    padding-left: 2.1%;
+}
+
+}
+
 
 
 </style>
 <link type="text/css" rel="stylesheet" href="css/animate.css" />
 <script src="js/wow.min.js"></script>
-<script src="js/nav.js"></script>
+
 <script>
   new WOW().init();
 </script>
 </head>
 <body>
-  <nav>
-    <div class="nav-wrapper">
-      <img src="img/logo-imax.png">
-      <div class="nav-menu">
-        <ul>
-          <li><a href="#Inicio" id="link_1">Inicio</a></li>
-          <li><a href="#Nosotros" id="link_2">Nosotros</a></li>
-          <li><a href="#App" id="link_3">Nuestra App</a></li>
-        </ul>        
-      </div>
+
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <img src="img/movil/drawable-hdpi/icon_menu.png">
+  </button>
+  <a class="navbar-brand" href="#"><img src="img/logo-imax.png"></a>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a href="#Inicio" id="link_1">Inicio</a>
+       <a href="#Nosotros" id="link_2">Nosotros</a>
+       <a href="#App" id="link_3">Nuestra App</a>
     </div>
-    <div class="nav-wrapper-movil">
-      <img src="img/movil/drawable-hdpi/logo_imax.png">
-    </div>   
-  </nav>
+  </div>
+</nav>
+
 
    <div class="home" id="Inicio">
       <span class="iMax">#YoSoyiMax</span>
@@ -384,7 +432,7 @@ footer{
 
       <div class="valores-wrapper">
 
-       <img src="img/valores.png">
+       <img class="wow zoomIn" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: zoomIn;" src="img/valores.png">
      </div>
    </div>
 
@@ -423,7 +471,7 @@ footer{
       <div class="texto-movil">
         Somos una familia global que apoya el espíritu empresarial. Hoy en día la comunidad se conforma por 15,000 empresarios que se extienden en 16 países.
       </div>
-      <img class="img-movil wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;" src="img/movil/drawable-hdpi/red_imax.png">
+      <img class="img-movil wow zoomIn" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: zoomIn;" src="img/movil/drawable-hdpi/red_imax.png">
 
       <p class="titulo-movil wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;"> <img src="img/movil/drawable-hdpi/mision.png"> Misión</p>
       <div class="texto-movil">
@@ -434,7 +482,7 @@ footer{
         Ser una organización líder a nivel mundial dentro de la corporación Amway que logre trascender por sus valores y la generación de prosperidad en la sociedad. 
       </div>  
       <p class="titulo-movil">Con el objetivo de crear familias prósperas, iMax fue fundado en cinco valores:</p>    
-      <img class="img-movil" src="img/movil/drawable-hdpi/valores.png"> 
+      <img class="img-movil wow zoomIn" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: zoomIn;" src="img/movil/drawable-hdpi/valores.png"> 
     </div>
     <div class="valores">
       <p class="titulo-movil">
@@ -443,7 +491,7 @@ footer{
       <div class="texto-movil">
         El éxito empresarial toma algo más que información. Contamos con una herramienta digital que permite consultar y compartir información para la capacitación,  crecimiento y desarrollo de habilidades de nuestros empresarios que forman parte de IMAX.
       </div>
-      <img class="img-movil wow fadeInDown" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInDown;" src="img/movil/drawable-hdpi/comunidad.png"> 
+      <img class="img-movil wow zoomIn" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: zoomIn;" src="img/movil/drawable-hdpi/comunidad.png"> 
       <ul>
         <li> Disfruta de contenidos para tu capacitación: videos, audios y libros.</li>
         <li>Enteráte de los eventos que tenemos para ti: seminarios, capacitaciones, orientaciones empresariales y convenciones.</li>
@@ -466,16 +514,16 @@ footer{
 
       </div>
       <ul>
-        <li>Inicio</li>
-        <li>Quiénes somos</li>
-        <li>Valores</li>
-        <li>Nuestra App</li>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Quiénes somos</a></li>
+        <li><a href="#">Valores</a></li>
+        <li><a href="#">Nuestra App</a></li>
       </ul>
 
       <ul>
-        <li>Política de privacidad</li>
-        <li>Términos y condiciones</li>
-        <li>FAQ</li>
+        <li><a href="#">Política de privacidad</a></li>
+        <li><a href="#">Términos y condiciones</a></li>
+        <li><a href="#">FAQ</a></li>
       </ul>
 
       <div class="social-imax">
@@ -490,18 +538,18 @@ footer{
         <p>© IMAX 2017</p>
       </div>
       <div class="listas">
-        <ul>
-          <li>Inicio</li>
-          <li>Quiénes somos</li>
-          <li>Valores</li>
-          <li>Nuestra App</li>
-        </ul>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Quiénes somos</a></li>
+        <li><a href="#">Valores</a></li>
+        <li><a href="#">Nuestra App</a></li>
+      </ul>
 
-        <ul>
-          <li>Politica de privacidad</li>
-          <li>Términos y condiciones</li>
-          <li>FAQ</li>
-        </ul>
+      <ul>
+        <li><a href="#">Política de privacidad</a></li>
+        <li><a href="#">Términos y condiciones</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
       </div>
 
       <div class="sociales">
@@ -514,8 +562,10 @@ footer{
   </footer>
 
   <!-- jQuery first, then Tether, then Bootstrap JS. -->
-  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <script src="js/nav.js"></script>
 </body>
 </html>
