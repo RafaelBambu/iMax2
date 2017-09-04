@@ -57,12 +57,25 @@
       z-index: 2;
     }
 
+    .white {
+      background: white !important;
+    }
+
     .navbar-brand {
       margin-left: 8%;
+      background-image: url("img/logo-imax.png");
+    }
+
+    .navbar-brand-later {
+      background-image: url("img/logo-imax2.png");
     }
 
     .navbar-nav {
       width: 50%
+    }
+
+    .cambio {
+      color: #cccccc !important;
     }
 
     .navbar-toggleable-md .navbar-collapse {
@@ -75,7 +88,7 @@
       justify-content: space-evenly;
       width: 30%;
       font-size: 20px !important;
-      color: #ffffff !important;
+      color: #ffffff;
       text-decoration: none;
       font-family: MyriadPro !important;
     }
@@ -87,7 +100,7 @@
 
 
     .navbar-toggleable-md .navbar-nav a:hover {
-      color: #69e3e9 !important;
+      color: #69e3e9;
       text-decoration: none;
     }
 
@@ -214,10 +227,10 @@
     }
 
     .social-imax {
-      width: 30%;
+      width: 25%;
       display: flex;
       height: 5%;
-      justify-content: space-evenly;
+      justify-content: space-between;
       padding: 25px 0 0 0;
     }
 
@@ -436,16 +449,14 @@
       }
 
       nav a img {
-
         width: 25%;
         padding-left: 2.1%;
       }
 
       .listas ul li a:hover {
-        color: #69e3e9 !important;
+        color: #69e3e9;
       }
-
-
+      
       .twitter {
         background: url("img/movil/drawable-hdpi/twitter.png");
         width: 30px;
@@ -491,7 +502,7 @@
       aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" style="margin-top: 10%;">
     <img src="img/movil/drawable-hdpi/icon_menu.png">
   </button>
-    <a class="navbar-brand" href="#"><img src="img/logo-imax.png"></a>
+    <a class="navbar-brand" href="#" style="height: 53px; width: 128px;"></a>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a href="#Inicio" id="link_1">Inicio</a>
@@ -709,18 +720,20 @@
     crossorigin="anonymous"></script>
   <script src="js/nav.js"></script>
   <script>
-    $(function(){
-    $(document).scroll(function(){
-        if($(this).scrollTop() > 1) {
-             $('#menu').css('background','transparent');                          
-        }
-        if($(this).scrollTop() < 1) {                 
-             $('#menu').css('background','white');
-         
-        }
+    $(window).scroll(function () {
+      var scroll = $(window).scrollTop();
+
+      if (scroll >= 700) {
+        $("nav").addClass("white");
+        $(".navbar-brand").addClass("navbar-brand-later");
+        $(".navbar-nav a").addClass("cambio");
+      } else {
+        $("nav").removeClass("white");
+        $(".navbar-brand").removeClass("navbar-brand-later");
+        $(".navbar-nav a").removeClass("cambio");
+      }
     });
-});
-</script>
+  </script>
 </body>
 
 </html>
