@@ -50,7 +50,7 @@
 
     nav {
       position: fixed !important;
-      background-image: linear-gradient(to left, #195184, #15467b);
+      background: transparent !important;
       width: 100%;
       height: 13.8%;
       font-family: unset;
@@ -105,10 +105,10 @@
       display: flex;
       justify-content: center;
       font-family: SFNSDisplay !important;
-      font-size: 30px;
+      font-size: 28px;
       text-align: center;
       color: #ffffff;
-      margin: 0;
+      margin: 3% 0 0 0;
     }
 
     .tittle-box {
@@ -150,6 +150,8 @@
     .valores-wrapper {
       display: flex;
       justify-content: space-around;
+      margin-top: 2%;
+      padding-bottom: 10.8%;
     }
 
 
@@ -180,7 +182,7 @@
     footer {
       width: 100%;
       height: 7.7%;
-      background: url("img/footer.png") no-repeat center center;
+      background: url("img/footer.png");
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
@@ -193,7 +195,7 @@
       font-family: MyriadPro;
       font-size: 16px;
       color: rgba(255, 255, 255, 0.7);
-      padding-top: 11%;
+      padding: 7% 0 3% 0;
     }
 
     .footer-wrapper ul li {
@@ -216,11 +218,12 @@
       display: flex;
       height: 5%;
       justify-content: space-evenly;
-      padding-top: 2%;
+      padding: 25px 0 0 0;
     }
 
     .fondo {
-      background: url("img/fondo.png") no-repeat center center fixed;
+      background: url("img/fondo.png");
+      background-size: auto auto;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
@@ -265,8 +268,7 @@
     }
 
     .box ul {
-      width: 71%;
-      text-align: justify;
+      width: 100%;
     }
 
 
@@ -484,7 +486,7 @@
 
 <body>
 
-  <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <nav id="menu" class="navbar navbar-toggleable-md navbar-light bg-faded">
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
       aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" style="margin-top: 10%;">
     <img src="img/movil/drawable-hdpi/icon_menu.png">
@@ -534,9 +536,8 @@
   <div class="fondo">
     <div class="content">
       <div class="content-wrapper">
-        <div class="wow zoomIn" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: zoomIn;"><img style="margin-left: 15.7%;
-          margin-top: -24%;
-      " src="img/red-imax.png"></div>
+        <div class="wow zoomIn" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: zoomIn;">
+          <img style="margin-left: 5%; margin-top: -24%;" src="img/red-imax.png"></div>
 
 
         <div class="box" style="margin-right: 11.3%;">
@@ -547,7 +548,7 @@
       </div>
 
       <div class="content-wrapper2">
-        <div class="box" style="margin-left: 10.1%; width: 35%; text-align: justify;">
+        <div class="box" style="margin-left: 10.1%; width: 44%; text-align: justify;">
           <p class="tittle-box2 wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;"><img src="img/mision.png">Misión</p>
           <p class="content-box" style="font-size: 20px;">
             Formar empresarios profesionales, líderes en la corporación Amway, que por medio de la educación y los valores de integridad,
@@ -555,7 +556,7 @@
             las herramientas para ser libres financieramente y mejorar su calidad de vida integralmente.
           </p>
         </div>
-        <div class="box" style="margin-right: 10.1%;width: 24%; text-align: justify;">
+        <div class="box" style="margin-right: 7.1%; width: 27%; text-align: justify;">
           <p class="tittle-box2 wow fadeInRight" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInRight;"><img src="img/vision.png">Visión </p>
           <p class="content-box" style="font-size: 20px;">Ser una organización líder a nivel mundial dentro de la corporación Amway que logre trascender por sus valores
             y la generación de prosperidad en la sociedad. </p>
@@ -584,10 +585,10 @@
   </div>
   <div id="App">
     <div class="content">
-      <div class="content-wrapper" style="margin-top: 2.9%">
-        <div class="wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;"><img src="img/comunidad.png"></div>
-        <div class="box" style="margin-right: 10.4%; text-align: justify; width: 30%;">
-          <p class="tittle-box" style="text-align: center;">Forma parte de esta gran<br> red empresarial</p>
+      <div class="content-wrapper">
+        <div class="wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;"><img style="width:100%;" src="img/comunidad.png"></div>
+        <div class="box" style="margin-right: 7.4%; text-align: justify; width: 40%;">
+          <p class="tittle-box" style="width: 95%; text-align: center; padding-top: 35px;">Forma parte de esta gran<br> red empresarial</p>
           <p class="content-box" style="font-size: 20px;">
             El éxito empresarial toma algo más que información. Contamos con una herramienta digital que permite consultar y compartir
             información para la capacitación, crecimiento y desarrollo de habilidades de nuestros empresarios que forman
@@ -595,20 +596,21 @@
         </div>
       </div>
 
-      <div class="content-wrapper">
-        <div class="box" style="margin-left: 10.1%; font-size: 20px;">
+      <div class="content-wrapper" style="margin-top: -13%;">
+        <div class="box" style=" margin-left: 8%; font-size: 20px; width: 35%;">
           <ul>
-            <li>Disfruta de contenidos para tu capacitación: videos, audios y libros.</li>
-            <li>Enteráte de los eventos que tenemos para ti: seminarios, capacitaciones, orientaciones empresariales y convenciones.</li>
+            <li>Disfruta de contenidos para tu capacitación: videos, audios y libros.</li> <br>
+            <li>Enteráte de los eventos que tenemos para ti: seminarios, capacitaciones, orientaciones empresariales y convenciones.</li><br>
             <li>Publica y comparte tus momentos de victoria.</li>
           </ul>
-          <p class="tittle-box" style="text-align: center;">¡Descárgala ahora!</p>
+          <p class="tittle-box" style="text-align: center; margin: 14% 0 10% 0;">¡Descárgala ahora!</p>
           <div class="download">
             <img src="img/download-on-the-app-store-badge-es-135-x-40.png">
             <img src="img/google-play-badge.png">
           </div>
         </div>
-        <div class="wow fadeInRight" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInRight;"><img src="img/emprendimiento.png">
+        <div class="wow fadeInRight" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInRight; width: 57%;">
+          <img style="width: 100%;" src="img/emprendimiento.png">
         </div>
       </div>
     </div>
@@ -651,16 +653,16 @@
 
       </div>
       <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Quiénes somos</a></li>
-        <li><a href="#">Valores</a></li>
-        <li><a href="#">Nuestra App</a></li>
+        <li><a href="">Inicio</a></li>
+        <li><a href="">Quiénes somos</a></li>
+        <li><a href="">Valores</a></li>
+        <li><a href="">Nuestra App</a></li>
       </ul>
 
       <ul>
-        <li><a href="#">Política de privacidad</a></li>
-        <li><a href="#">Términos y condiciones</a></li>
-        <li><a href="#">FAQ</a></li>
+        <li><a href="">Política de privacidad</a></li>
+        <li><a href="">Términos y condiciones</a></li>
+        <li><a href="">FAQ</a></li>
       </ul>
 
       <div class="social-imax">
@@ -706,6 +708,19 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
     crossorigin="anonymous"></script>
   <script src="js/nav.js"></script>
+  <script>
+    $(function(){
+    $(document).scroll(function(){
+        if($(this).scrollTop() > 1) {
+             $('#menu').css('background','transparent');                          
+        }
+        if($(this).scrollTop() < 1) {                 
+             $('#menu').css('background','white');
+         
+        }
+    });
+});
+</script>
 </body>
 
 </html>
