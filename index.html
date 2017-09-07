@@ -125,7 +125,7 @@
       font-size: 28px;
       text-align: center;
       color: #ffffff;
-      margin: 3% 0 0 0;
+      margin: 7% 0 10% 0;
     }
 
     .tittle-box {
@@ -294,7 +294,6 @@
     @media only screen and (max-width: 600px) {
       nav {
         height: 8.8%;
-        background: #15467b !important;
       }
 
       .white-movil {
@@ -305,9 +304,10 @@
       }
 
       .navbar-brand {
+        margin-top: 8.9%;
         margin-left: 5%;
         background-image: url("img/movil/drawable-hdpi/logo_imax.png");
-        height: 43px;
+        height: 42px;
         width: 84px;
       }
 
@@ -330,7 +330,7 @@
         width: 100%;
       }
 
-      .navbar-nav-later-movil{
+      .navbar-nav-later-movil {
         background: white !important;
       }
 
@@ -360,7 +360,7 @@
 
       .content-movil {
         display: inherit;
-        margin: 0 3.9%;
+        margin: 0 8.9%;
         text-align: justify;
       }
 
@@ -371,17 +371,24 @@
       .fondo-movil {
         display: inherit;
         background-image: url(img/movil/drawable-hdpi/fondo.png);
+        background-size: auto auto;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
       }
 
       .titulo-movil {
         font-size: 20px;
         color: #536EAA;
         font-family: Raleway !important;
+        font-weight: bold;
+        margin-bottom: 5%;
       }
 
       .texto-movil {
         font-size: 15px;
-        color: #2A3A4B;
+        color: rgba(42, 58, 75, 0.6);
         font-family: MyriadPro !important;
       }
 
@@ -443,6 +450,15 @@
         color: rgba(255, 255, 255, 0.7);
       }
 
+      .objetivo {
+        color: #195184 !important;
+        text-align: center;
+        width: 98%;
+        font-size: 20px;
+        font-family: Raleway !important;
+        font-weight: bold;
+        margin-bottom: 7%;
+      }
 
       .listas ul li a:hover {
         text-decoration: none;
@@ -550,21 +566,21 @@
     <div class="fondo-movil">
       <p class="titulo-movil">IMAX Network Team</p>
       <div class="texto-movil">
-          Somos una familia global que apoya el espíritu empresarial. Hoy en día la comunidad se conforma por
-          <span style="font-weight: bold;">15,000</span> empresarios que se extienden en <span style="font-weight: bold;">16 países.</span> 
+        Somos una familia global que apoya el espíritu empresarial. Hoy en día la comunidad se conforma por
+        <span style="font-weight: bold;">15,000</span> empresarios que se extienden en <span style="font-weight: bold;">16 países.</span>
       </div>
       <img class="img-movil wow zoomIn" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: zoomIn;"
         src="img/movil/drawable-hdpi/red_imax.png">
 
       <p class="titulo-movil wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
-        <img src="img/movil/drawable-hdpi/mision.png"> Misión</p>
+        <img style="width: 36px; height: 36px;" src="img/movil/drawable-hdpi/mision.png"> Misión</p>
       <div class="texto-movil">
         Formar empresarios profesionales, líderes en la corporación Amway, que por medio de la educación y los valores de integridad,
         perseverancia y valentía, se logre un impacto máximo de prosperidad y trascendencia en las familias, brindándoles
         las herramientas para ser libres financieramente y mejorar su calidad de vida integralmente.
       </div>
-      <p class="titulo-movil wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
-        <img src="img/movil/drawable-hdpi/vision.png"> Visión</p>
+      <p class="titulo-movil wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft; margin-top: 7%;">
+        <img style="width: 36px; height: 36px; " src="img/movil/drawable-hdpi/vision.png"> Visión</p>
       <div class="texto-movil">
         Ser una organización líder a nivel mundial dentro de la corporación Amway que logre trascender por sus valores y la generación
         de prosperidad en la sociedad.
@@ -584,7 +600,7 @@
           <p class="tittle-box" style="margin-top: 83px;">IMAX Network Team</p>
           <div class="content-box">
             Somos una familia global que apoya el espíritu empresarial. Hoy en día la comunidad se conforma por
-            <span style="font-weight: bold;">15,000</span> empresarios que se extienden en <span style="font-weight: bold;">16 países.</span>            
+            <span style="font-weight: bold;">15,000</span> empresarios que se extienden en <span style="font-weight: bold;">16 países.</span>
           </div>
         </div>
       </div>
@@ -617,8 +633,8 @@
             src="img/valores.png">
         </div>
       </div>
-      <div class="content-movil">
-        <p class="titulo-movil">Con el objetivo de crear familias prósperas, iMax fue fundado en cinco valores:</p>
+      <div class="content-movil" style="margin-top: 10%;">
+        <p class="objetivo">Con el objetivo de crear familias prósperas, iMax fue fundado en cinco valores:</p>
         <img class="img-movil wow zoomIn" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: zoomIn;"
           src="img/movil/drawable-hdpi/valores.png">
       </div>
@@ -716,7 +732,7 @@
     <div class="footer-movil" style="margin-top: 11.4%">
       <div class="logo-footer">
         <img src="img/movil/drawable-hdpi/logo_imax2.png">
-        <p>© IMAX 2017</p>
+        <p style="color: rgba(255, 255, 255, 0.7);"> © IMAX 2017</p>
       </div>
       <div class="listas">
         <ul>
@@ -763,7 +779,7 @@
         $(".navbar-nav a").addClass("cambio-movil");
         $(".navbar-brand").addClass("navbar-brand-later-movil");
         $(".navbar-nav").addClass("navbar-nav-later-movil");
-        
+
       } else {
         $("nav").removeClass("white");
         $(".navbar-brand").removeClass("navbar-brand-later");
