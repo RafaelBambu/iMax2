@@ -64,10 +64,14 @@
     .navbar-brand {
       margin-left: 8%;
       background-image: url("img/logo-imax.png");
+      height: 53px;
+      width: 128px;
     }
 
     .navbar-brand-later {
       background-image: url("img/logo-imax2.png");
+      height: 53px;
+      width: 128px;
     }
 
     .navbar-nav {
@@ -137,6 +141,7 @@
       font-family: MyriadPro !important;
       font-size: 24px;
       color: #2a3a4b;
+      text-align: justify;
     }
 
     .content-wrapper {
@@ -289,6 +294,27 @@
     @media only screen and (max-width: 600px) {
       nav {
         height: 8.8%;
+        background: #15467b !important;
+      }
+
+      .white-movil {
+        background: white !important;
+      }
+      .cambio-movil {
+        color: #cccccc !important;
+      }
+
+      .navbar-brand {
+        margin-left: 5%;
+        background-image: url("img/movil/drawable-hdpi/logo_imax.png");
+        height: 43px;
+        width: 84px;
+      }
+
+      .navbar-brand-later-movil {
+        background-image: url("img/logo-imax2.png");
+        height: 43px;
+        width: 84px;
       }
 
       .home {
@@ -299,8 +325,13 @@
         -o-background-size: cover;
         background-size: cover;
       }
+
       .navbar-toggleable-md .navbar-nav a {
         width: 100%;
+      }
+
+      .navbar-nav-later-movil{
+        background: white !important;
       }
 
 
@@ -327,13 +358,10 @@
         display: none;
       }
 
-
       .content-movil {
         display: inherit;
-      }
-
-      .content-movil {
-        margin: 0 8.9%;
+        margin: 0 3.9%;
+        text-align: justify;
       }
 
       .navbar {
@@ -348,13 +376,13 @@
       .titulo-movil {
         font-size: 20px;
         color: #536EAA;
-        font-family: Relaway;
+        font-family: Raleway !important;
       }
 
       .texto-movil {
         font-size: 15px;
         color: #2A3A4B;
-        font-family: MyriadPro;
+        font-family: MyriadPro !important;
       }
 
       .img-movil {
@@ -427,7 +455,7 @@
       .navbar-nav {
         padding-top: 5%;
         width: 100%;
-        background-image: linear-gradient(to left, #195184, #15467b);
+        background: #15467b;
         display: flex;
         justify-content: flex-end;
       }
@@ -456,7 +484,7 @@
       .listas ul li a:hover {
         color: #69e3e9;
       }
-      
+
       .twitter {
         background: url("img/movil/drawable-hdpi/twitter.png");
         width: 30px;
@@ -482,6 +510,7 @@
         width: 30px;
         height: 30px;
       }
+
       .instagram:hover {
         background: url("img/movil/drawable-hdpi/instagram-h.png");
       }
@@ -502,7 +531,7 @@
       aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" style="margin-top: 10%;">
     <img src="img/movil/drawable-hdpi/icon_menu.png">
   </button>
-    <a class="navbar-brand" href="#" style="height: 53px; width: 128px;"></a>
+    <a class="navbar-brand" href="#"></a>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a href="#Inicio" id="link_1">Inicio</a>
@@ -521,8 +550,8 @@
     <div class="fondo-movil">
       <p class="titulo-movil">IMAX Network Team</p>
       <div class="texto-movil">
-        Somos una familia global que apoya el espíritu empresarial. Hoy en día la comunidad se conforma por 15,000 empresarios que
-        se extienden en 16 países.
+          Somos una familia global que apoya el espíritu empresarial. Hoy en día la comunidad se conforma por
+          <span style="font-weight: bold;">15,000</span> empresarios que se extienden en <span style="font-weight: bold;">16 países.</span> 
       </div>
       <img class="img-movil wow zoomIn" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: zoomIn;"
         src="img/movil/drawable-hdpi/red_imax.png">
@@ -551,10 +580,12 @@
           <img style="margin-left: 5%; margin-top: -24%;" src="img/red-imax.png"></div>
 
 
-        <div class="box" style="margin-right: 11.3%;">
+        <div class="box" style="margin-right: 15.3%;">
           <p class="tittle-box" style="margin-top: 83px;">IMAX Network Team</p>
-          <div class="content-box">Somos una familia global que apoya el espíritu<br> empresarial. Hoy en día la comunidad se<br> conforma por
-            <span style="font-weight: bold;">15,000</span> empresarios que se<br> extienden en <span style="font-weight: bold;">16 países.</span>            </div>
+          <div class="content-box">
+            Somos una familia global que apoya el espíritu empresarial. Hoy en día la comunidad se conforma por
+            <span style="font-weight: bold;">15,000</span> empresarios que se extienden en <span style="font-weight: bold;">16 países.</span>            
+          </div>
         </div>
       </div>
 
@@ -636,10 +667,10 @@
       </div>
       <img class="img-movil wow zoomIn" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: zoomIn;"
         src="img/movil/drawable-hdpi/comunidad.png">
-      <ul>
-        <li> Disfruta de contenidos para tu capacitación: videos, audios y libros.</li>
-        <li>Enteráte de los eventos que tenemos para ti: seminarios, capacitaciones, orientaciones empresariales y convenciones.</li>
-        <li>Publica y comparte tus momentos de victoria.</li>
+      <ul style="width: 94%;">
+        <li style="font-family: MyriadPro !important;"> Disfruta de contenidos para tu capacitación: videos, audios y libros.</li> <br>
+        <li style="font-family: MyriadPro !important;">Enteráte de los eventos que tenemos para ti: seminarios, capacitaciones, orientaciones empresariales y convenciones.</li><br>
+        <li style="font-family: MyriadPro !important;">Publica y comparte tus momentos de victoria.</li>
       </ul>
       <img class="img-movil wow zoomIn" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: zoomIn;"
         src="img/movil/drawable-hdpi/emprendimiento.png">
@@ -660,7 +691,7 @@
     <div class="footer-wrapper">
       <div style="padding-left: 6.5%;">
         <img src="img/logo-imax.png">
-        <p> © IMAX 2017</p>
+        <p style="color: rgba(255, 255, 255, 0.7);"> © IMAX 2017</p>
 
       </div>
       <ul>
@@ -723,14 +754,24 @@
     $(window).scroll(function () {
       var scroll = $(window).scrollTop();
 
-      if (scroll >= 700) {
+      if (scroll >= 400) {
         $("nav").addClass("white");
         $(".navbar-brand").addClass("navbar-brand-later");
         $(".navbar-nav a").addClass("cambio");
+      } else if (scroll >= 50) {
+        $("nav").addClass("white-movil");
+        $(".navbar-nav a").addClass("cambio-movil");
+        $(".navbar-brand").addClass("navbar-brand-later-movil");
+        $(".navbar-nav").addClass("navbar-nav-later-movil");
+        
       } else {
         $("nav").removeClass("white");
         $(".navbar-brand").removeClass("navbar-brand-later");
         $(".navbar-nav a").removeClass("cambio");
+        $("nav").removeClass("white-movil");
+        $(".navbar-nav a").removeClass("cambio-movil");
+        $(".navbar-brand").removeClass("navbar-brand-later-movil");
+        $(".navbar-nav").removeClass("navbar-nav-later-movil");
       }
     });
   </script>
