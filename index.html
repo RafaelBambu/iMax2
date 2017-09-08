@@ -79,7 +79,8 @@
     .cambio {
       color: #cccccc !important;
     }
-    .cambio:hover{
+
+    .cambio:hover {
       color: #69e3e9 !important;
     }
 
@@ -293,6 +294,14 @@
 
 
     @media only screen and (max-width: 600px) {
+      .navbar .navbar-toggler-right span {
+        background-image: url('img/cerrar.svg');
+
+      }
+
+      .navbar .navbar-toggler.collapsed span {
+        background-image: url('img/menu.svg');
+      }
 
       #Nosotros {
         padding-bottom: 18%;
@@ -552,10 +561,7 @@
         background: url("img/movil/drawable-hdpi/instagram-h.png");
       }
 
-      .navbar-toggler{
-
-      }
-
+      .navbar-toggler {}
     }
   </style>
   <link type="text/css" rel="stylesheet" href="css/animate.css" />
@@ -571,7 +577,8 @@
   <nav id="menu" class="navbar navbar-toggleable-md navbar-light bg-faded">
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
       aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" style="margin-top: 10%;">
-    <img src="img/movil/drawable-hdpi/icon_menu.png">
+    <!-- img src="img/movil/drawable-hdpi/icon_menu.png"-->
+    <span>asd</span>
   </button>
     <a class="navbar-brand" href="#"></a>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
