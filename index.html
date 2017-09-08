@@ -36,7 +36,7 @@
 
     .home {
       padding-top: 8%;
-      background: url("img/ondas.png") no-repeat center center;
+      background: url("img/ondas.svg") no-repeat center center;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
@@ -223,7 +223,7 @@
     .footer-wrapper ul li a {
       text-decoration: none;
       font-family: MyriadPro;
-      font-size: 16px;
+      font-size: 13px;
       color: rgba(255, 255, 255, 0.7);
     }
 
@@ -240,7 +240,7 @@
     }
 
     .fondo {
-      background: url("img/fondo.png");
+      background: url("img/fondo.svg");
       background-size: auto auto;
       -webkit-background-size: cover;
       -moz-background-size: cover;
@@ -292,6 +292,13 @@
 
 
     @media only screen and (max-width: 600px) {
+
+     #Nosotros{
+      padding-bottom: 18%;
+     }
+
+
+
       nav {
         height: 8.8%;
       }
@@ -304,22 +311,28 @@
       }
 
       .navbar-brand {
-        margin-top: 8.9%;
+        margin-top: 10.9%;
+        margin-left: 8.9%;
         margin-left: 5%;
-        background-image: url("img/movil/drawable-hdpi/logo_imax.png");
-        height: 42px;
-        width: 84px;
+        background-image: url("img/movil/drawable-hdpi/logo_imax.svg");
+        background-size: auto auto;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 28px;
+        width: 56px;
       }
 
       .navbar-brand-later-movil {
-        background-image: url("img/logo-imax2.png");
-        height: 43px;
-        width: 84px;
+        background-image: url("img/movil/drawable-hdpi/logo_IMAX_azul.svg");
+        height: 28px;
+        width: 56px;
       }
 
       .home {
         padding-top: 20%;
-        background: url("img/ondas.png") no-repeat center center;
+        background: url("img/ondas.svg") no-repeat center center;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -370,7 +383,7 @@
 
       .fondo-movil {
         display: inherit;
-        background-image: url(img/movil/drawable-hdpi/fondo.png);
+        background-image: url(img/movil/drawable-hdpi/fondo.svg);
         background-size: auto auto;
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -409,10 +422,8 @@
         display: block;
         font-size: 13px;
         color: #FFFFFF;
-        opacity: .7;
         font-family: MyriadPro;
         padding-top: 13.1%;
-        background: url("img/movil/drawable-hdpi/footer.png") no-repeat center center;
 
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -457,7 +468,7 @@
         font-size: 20px;
         font-family: Raleway !important;
         font-weight: bold;
-        margin-bottom: 7%;
+        margin-bottom: 10%;
       }
 
       .listas ul li a:hover {
@@ -499,6 +510,14 @@
 
       .listas ul li a:hover {
         color: #69e3e9;
+      }
+
+      footer{
+        background: url("img/movil/drawable-hdpi/footer.svg") no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
       }
 
       .twitter {
@@ -562,6 +581,8 @@
     <span class="iMax">#YoSoyiMax</span>
     <p class="creemos">Creemos que todo el mundo merece una <br>oportunidad para prosperar</p>
   </div>
+
+  <div class="fondo">
   <div class="content-movil">
     <div class="fondo-movil">
       <p class="titulo-movil">IMAX Network Team</p>
@@ -589,7 +610,6 @@
   </div>
 
 
-  <div class="fondo">
     <div class="content">
       <div class="content-wrapper">
         <div class="wow zoomIn" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: zoomIn;">
@@ -673,7 +693,7 @@
       </div>
     </div>
     <div class="content-movil">
-      <p class="titulo-movil">
+      <p class="objetivo">
         Forma parte de esta gran red empresarial
       </p>
       <div class="texto-movil">
@@ -681,9 +701,9 @@
         información para la capacitación, crecimiento y desarrollo de habilidades de nuestros empresarios que forman parte
         de IMAX.
       </div>
-      <img class="img-movil wow zoomIn" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: zoomIn;"
+      <img class="img-movil wow zoomIn" data-wow-delay="0.3s" style="margin-top: 10%; visibility: visible; animation-delay: 0.3s; animation-name: zoomIn;"
         src="img/movil/drawable-hdpi/comunidad.png">
-      <ul style="width: 94%;">
+      <ul style="width: 94%; text-align: left; color: rgba(42, 58, 75, 0.6); margin-top: -15%;">
         <li style="font-family: MyriadPro !important;"> Disfruta de contenidos para tu capacitación: videos, audios y libros.</li> <br>
         <li style="font-family: MyriadPro !important;">Enteráte de los eventos que tenemos para ti: seminarios, capacitaciones, orientaciones empresariales y convenciones.</li><br>
         <li style="font-family: MyriadPro !important;">Publica y comparte tus momentos de victoria.</li>
@@ -692,10 +712,10 @@
         src="img/movil/drawable-hdpi/emprendimiento.png">
       <p class="titulo-movil" style="text-align: center; ">¡Descárgala ahora!</p>
       <div class="download-movil">
-        <img class="wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;"
-          src="img/movil/drawable-hdpi/download_on_the_app_store_badge_es_135_x_40.png">
-        <img class="wow fadeInRight" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInRight;"
-          src="img/movil/drawable-hdpi/google_play_badge.png">
+        <img class="wow fadeInLeft" data-wow-delay="0.3s" style="width: 118px; height: 40px; visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;"
+          src="img/movil/drawable-hdpi/download_on_the_app_store_badge_es_135_x_40.svg">
+        <img class="wow fadeInRight" data-wow-delay="0.3s" style="width: 118px; height: 40px; visibility: visible; animation-delay: 0.3s; animation-name: fadeInRight;"
+          src="img/movil/drawable-hdpi/google_play_badge.svg">
       </div>
     </div>
   </div>
@@ -731,21 +751,21 @@
     </div>
     <div class="footer-movil" style="margin-top: 11.4%">
       <div class="logo-footer">
-        <img src="img/movil/drawable-hdpi/logo_imax2.png">
-        <p style="color: rgba(255, 255, 255, 0.7);"> © IMAX 2017</p>
+        <img style="    width: 56px; height: 28px;" src="img/movil/drawable-hdpi/logo_imax2.png">
+        <p style="margin-top: 2%; color: rgba(255, 255, 255, 0.7);"> © IMAX 2017</p>
       </div>
       <div class="listas">
         <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Quiénes somos</a></li>
-          <li><a href="#">Valores</a></li>
-          <li><a href="#">Nuestra App</a></li>
+          <li><a href="">Inicio</a></li>
+          <li><a href="">Quiénes somos</a></li>
+          <li><a href="">Valores</a></li>
+          <li><a href="">Nuestra App</a></li>
         </ul>
 
         <ul>
-          <li><a href="#">Política de privacidad</a></li>
-          <li><a href="#">Términos y condiciones</a></li>
-          <li><a href="#">FAQ</a></li>
+          <li><a href="">Política de privacidad</a></li>
+          <li><a href="">Términos y condiciones</a></li>
+          <li><a href="">FAQ</a></li>
         </ul>
       </div>
 
@@ -774,7 +794,7 @@
         $("nav").addClass("white");
         $(".navbar-brand").addClass("navbar-brand-later");
         $(".navbar-nav a").addClass("cambio");
-      } else if (scroll >= 50) {
+      } else if (scroll >= 90) {
         $("nav").addClass("white-movil");
         $(".navbar-nav a").addClass("cambio-movil");
         $(".navbar-brand").addClass("navbar-brand-later-movil");
