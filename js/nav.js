@@ -37,4 +37,12 @@ $(document).ready(function () {
         e.preventDefault();
         $("html, body").animate({ scrollTop: ($('#App').offset().top - 100) }, 1000);
     });
+    $('#link_10').on('click', function (e) {
+        e.preventDefault();
+        $("html, body").animate({ scrollTop: ($('#somos').offset().top - 100) }, 1000);
+    });
+    $('#link_0').on('click', function (e) {
+        e.preventDefault();
+        $("html, body").animate({ scrollTop: ($('#somos').offset().top - 100) }, 1000);
+    });
 });
