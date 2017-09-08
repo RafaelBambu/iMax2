@@ -294,13 +294,34 @@
 
 
     @media only screen and (max-width: 600px) {
-      .navbar .navbar-toggler-right span {
-        background-image: url('img/cerrar.svg');
-
+      .navbar-toggleable-md .navbar-nav a{
+        font-size: 12px !important;
+        padding-right: 10% !important;
+        font-weight: normal !important;
       }
 
-      .navbar .navbar-toggler.collapsed span {
+      .navbar .navbar-toggler .navbar-toggler-icon {
+        background-image: url('img/cerrar.svg');
+        width: 13px;
+        height: 13px;
+      }
+
+
+
+      .navbar .navbar-toggler.collapsed .navbar-toggler-icon {
         background-image: url('img/menu.svg');
+        width: 22px;
+        height: 14px;
+      }
+      
+      .navbar-toggler-icon-latter2 {
+        background-image: url('img/menu_azul.svg');
+      }
+
+      navbar .navbar-toggler.navbar-toggler-icon-latter2 {
+        background-image: url('img/cerrar.svg') !important;
+        width: 13px;
+        height: 13px;
       }
 
       #Nosotros {
@@ -310,7 +331,9 @@
 
 
       nav {
-        height: 8.8%;
+        height: 8.8%;    
+        position: relative !important;
+        background: #195184 !important;
       }
 
       .white-movil {
@@ -463,6 +486,19 @@
       .listas ul li {
         display: flex;
       }
+      .listas ul li {
+        text-decoration: none;
+        font-family: MyriadPro;
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.7);
+    }
+    .listas ul li a:hover {
+        color: #69e3e9;
+      }
+
+      .listas ul li :hover{
+        color: #69e3e9;
+      }
 
       .listas ul li a {
         text-decoration: none;
@@ -507,7 +543,7 @@
 
       .navbar-light .navbar-toggler {
         border: none;
-        width: 25%;
+        width: 14%;
       }
 
       .navbar-light .navbar-toggler img {
@@ -519,9 +555,7 @@
         padding-left: 2.1%;
       }
 
-      .listas ul li a:hover {
-        color: #69e3e9;
-      }
+
 
       footer {
         background: url("img/movil/drawable-hdpi/footer.svg") no-repeat center center;
@@ -575,11 +609,10 @@
 <body>
 
   <nav id="menu" class="navbar navbar-toggleable-md navbar-light bg-faded">
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" style="margin-top: 10%;">
-    <!-- img src="img/movil/drawable-hdpi/icon_menu.png"-->
-    <span>asd</span>
-  </button>
+    <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" style="margin-top: 8%;">
+<span class="navbar-toggler-icon"></span>
+</button>
     <a class="navbar-brand" href="#"></a>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
@@ -596,7 +629,7 @@
     <p class="creemos">Creemos que todo el mundo merece una <br>oportunidad para prosperar</p>
   </div>
 
-  <div class="fondo">
+  <div class="fondo" id="somos">
     <div class="content-movil">
       <div class="fondo-movil">
         <p class="titulo-movil">IMAX Network Team</p>
@@ -746,7 +779,7 @@
       </div>
       <ul>
         <li><a href="#Inicio" id="link_4">Inicio</a></li>
-        <li><a>Quiénes somos</a></li>
+        <li><a href="#somos" id="link_0">Quiénes somos</a></li>
         <li><a href="#Nosotros" id="link_5">Valores</a></li>
         <li><a href="#App" id="link_6">Nuestra App</a></li>
       </ul>
@@ -771,7 +804,7 @@
       <div class="listas">
         <ul>
           <li><a href="#Inicio" id="link_7">Inicio</a></li>
-          <li><a>Quiénes somos</a></li>
+          <li><a href="#somos" id="link_10">Quiénes somos</a></li>
           <li><a href="#Nosotros" id="link_8">Valores</a></li>
           <li><a href="#App" id="link_9">Nuestra App</a></li>
         </ul>
@@ -809,19 +842,22 @@
         $(".navbar-brand").addClass("navbar-brand-later");
         $(".navbar-nav a").addClass("cambio");
       } else if (scroll >= 90) {
-        $("nav").addClass("white-movil");
-        $(".navbar-nav a").addClass("cambio-movil");
-        $(".navbar-brand").addClass("navbar-brand-later-movil");
-        $(".navbar-nav").addClass("navbar-nav-later-movil");
+        //$("nav").addClass("white-movil");
+        //$(".navbar-nav a").addClass("cambio-movil");
+        //$(".navbar-brand").addClass("navbar-brand-later-movil");
+        //$(".navbar-nav").addClass("navbar-nav-later-movil");
+        //$(".navbar .navbar-toggler.collapsed .navbar-toggler-icon").addClass("navbar-toggler-icon-latter2");
 
       } else {
         $("nav").removeClass("white");
         $(".navbar-brand").removeClass("navbar-brand-later");
         $(".navbar-nav a").removeClass("cambio");
-        $("nav").removeClass("white-movil");
-        $(".navbar-nav a").removeClass("cambio-movil");
-        $(".navbar-brand").removeClass("navbar-brand-later-movil");
-        $(".navbar-nav").removeClass("navbar-nav-later-movil");
+        //$("nav").removeClass("white-movil");
+        //$(".navbar-nav a").removeClass("cambio-movil");
+       // $(".navbar-brand").removeClass("navbar-brand-later-movil");
+       // $(".navbar-nav").removeClass("navbar-nav-later-movil");
+       // $(".navbar .navbar-toggler.collapsed .navbar-toggler-icon").removeClass("navbar-toggler-icon-latter2");
+
       }
     });
   </script>
